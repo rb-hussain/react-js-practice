@@ -1,0 +1,9 @@
+.card_body{
+    background-color: #ffff;
+    border: 2px solid #6f6f6f;
+    border-radius: 10px;
+    box-shadow: 4px 15px 28px 6px rgba(0,0,0,0.75);
+}
+.card_img{
+    width: 100%;
+}
