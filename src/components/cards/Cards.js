@@ -8,7 +8,7 @@ export default function Cards(){
         <MainHeading title={"NetFlix Top 5 Series"}/>
         <div className="container">
             <div className="row">
-              <CardsBox cardImg={wed} cardTitle={"WEDNESDAY"} cardSubTitle={"A Orignal Netflix Series"} cardLink={"https://www.youtube.com/watch?v=HRhJVGjIraE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=23"} cardBtn={"Watch Now"}/>  
+              <CardsBox cardImg={wed} cardTitle={"WEDNESDAY"} cardSubTitle={"A Orignal Netflix Seriess"} cardLink={"https://www.youtube.com/watch?v=HRhJVGjIraE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=23"} cardBtn={"Watch Now"}/>  
               <CardsBox cardImg={wed} cardTitle={"WEDNESDAY"} cardSubTitle={"A Orignal Netflix Series"} cardLink={"https://www.youtube.com/watch?v=HRhJVGjIraE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=23"} cardBtn={"Watch Now"}/> 
               <CardsBox cardImg={wed} cardTitle={"WEDNESDAY"} cardSubTitle={"A Orignal Netflix Series"} cardLink={"https://www.youtube.com/watch?v=HRhJVGjIraE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=23"} cardBtn={"Watch Now"}/> 
             </div>
