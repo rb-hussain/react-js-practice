@@ -1,10 +1,10 @@
-import wed from './cardsImg/wed.jpeg';
+
 
 export default function CardsBox(props){
     return(
         <>
         <div className="col-sm-4 d-flex mt-4 mb-4">
-            <div className="card_body justify-content-center py-4 px-4 ">
+            <div className="card_body justify-content-center py-4 px-3 ">
                 <div className="cus_card">
                     <div className="card_img d-flex justify-content-center">
                     <img src={props.cardImg} />
