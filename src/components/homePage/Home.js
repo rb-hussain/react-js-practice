@@ -3,6 +3,7 @@ import Cards from "../cards/Cards";
 import FirstHook from "../hooks/FirstHook";
 import Increment from "../increment/Increment";
 import List from "../list/List";
+import Todo from "../todo/Todo";
 
 
 export default function Home(){
@@ -28,6 +29,7 @@ export default function Home(){
         <FirstHook add={addItemHandle} />
         <List items={itemslist} />
         <Increment />
+        <Todo />
         </>
     );
 }
