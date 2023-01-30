@@ -1,13 +1,17 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-const TodoList = () => {
+const TodoList = (props) => {
     const todoHeading ="Todo List";
     const OnSubmitHandler = (event) => {
          event.preventDefault();
        };
-       const todeItemRef = useRef(null);
+       const todeItemRef = useRef(null); 
+       const [todos, setTodos] = useState(["One","Two","Three","Four"]);
+
        const getTodoItems = () => {
-        console.log(todeItemRef.current.value);
+        setTodos([...todos, todeItemRef.current.value]);
+        todeItemRef.current.value ='';
+        console.log(todos);
        };
     
        return (
@@ -19,8 +23,14 @@ const TodoList = () => {
             <input ref={todeItemRef} type="text" name="TodoField" />
             <button onClick={getTodoItems}> Add</button>
         </form>
+        <div>
+            {todos.map((todoShow, key)=>{
+           return <div key={key}> {todoShow}</div>
+            })}
+        </div>
     </div>
 </div>
+
     </>
 );
 };

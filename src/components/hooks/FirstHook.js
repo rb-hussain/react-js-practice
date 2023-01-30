@@ -15,8 +15,6 @@ export default function FirstHook ({add}) {
                 <div className="col-12">
                     <input id="inputval" ref={inputRef} type="text" name="field"   />
                     <button className="btn" onClick={test}> Click</button>
-                    <p id="showText"> 
-                    </p>
                 </div>
             </div>
         </div>
