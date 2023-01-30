@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cards from "../cards/Cards";
 import DigitalClock from "../digitalClock/DigitalClock";
 import Events from "../events/Events";
+import UserDataForm from "../forms/UserDataForm";
 import Timer from "../getTime/Timer";
 import FirstHook from "../hooks/FirstHook";
 import Increment from "../increment/Increment";
@@ -29,6 +30,7 @@ export default function Home(){
         <Timer />
         <DigitalClock />
         <Events />
+        <UserDataForm />
         </>
     );
 }
