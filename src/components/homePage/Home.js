@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cards from "../cards/Cards";
+import DigitalClock from "../digitalClock/DigitalClock";
 import Timer from "../getTime/Timer";
 import FirstHook from "../hooks/FirstHook";
 import Increment from "../increment/Increment";
@@ -25,6 +26,7 @@ export default function Home(){
         <Todo />
         {/* <SingleTodo /> */}
         <Timer />
+        <DigitalClock />
         </>
     );
 }

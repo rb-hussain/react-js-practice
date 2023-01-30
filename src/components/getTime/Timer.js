@@ -3,6 +3,7 @@ import { useState } from "react";
 const Timer = () => {
     const timer = new Date().toLocaleTimeString();
     const [showTime, setTime ]= useState(timer);
+    
     const updateTimer = () => {
        let showTime =new Date().toLocaleTimeString();
         setTime(showTime);
