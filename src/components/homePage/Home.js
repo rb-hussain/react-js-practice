@@ -3,10 +3,12 @@ import Cards from "../cards/Cards";
 import DigitalClock from "../digitalClock/DigitalClock";
 import Events from "../events/Events";
 import UserDataForm from "../forms/UserDataForm";
+import UserDataFormEvent from "../forms/UserDataFormEvent";
 import Timer from "../getTime/Timer";
 import FirstHook from "../hooks/FirstHook";
 import Increment from "../increment/Increment";
 import List from "../list/List";
+import Login from "../simpleLogin/Login";
 import SingleTodo from "../todo/SingleTodo";
 import Todo from "../todo/Todo";
 
@@ -31,6 +33,8 @@ export default function Home(){
         <DigitalClock />
         <Events />
         <UserDataForm />
+        <UserDataFormEvent />
+        <Login />
         </>
     );
 }
