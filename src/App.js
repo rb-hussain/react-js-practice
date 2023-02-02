@@ -1,14 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './components/homePage/Home';
-import { BrowserRouter } from 'react-router-dom';
-
-function App() {
+import * as React from "react";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Home from "../src/components/homePage/Home"
+import MainRouter from "./components/router/MainRouter";
+export default function App() {
   return (
-    <BrowserRouter >
-    <App />
-    </BrowserRouter>
+    <MainRouter />
   );
-}
-
-export default App;
+};
