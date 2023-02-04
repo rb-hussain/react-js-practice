@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './navigation.css'; 
-const Navigation = () =>{
+const Navigation = ({onLogout}) =>{
     return (
         <header>
             <div>
@@ -30,6 +30,7 @@ const Navigation = () =>{
               <Link to="/nothing-here">404</Link>
             </li>
           </ul>
+          <button className="login-btn" onClick={ () => onLogout(false)} > LogOut </button>
         </nav>
   
         <hr />

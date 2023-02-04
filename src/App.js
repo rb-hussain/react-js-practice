@@ -1,13 +1,25 @@
-import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Home from "../src/components/homePage/Home"
+import { useState } from "react";
 import Navigation from "./components/header/Navigation";
 import MainRouter from "./components/router/MainRouter";
+import Login from "./components/simpleLogin/Login"
 export default function App() {
+ 
+  const [isAuth, setisAuth] = useState(false);
+  
+  const loginHandler = () =>{
+    setisAuth (true);
+  }
+
+  const logoutHanlder = () =>{
+    setisAuth (false);
+  }
+
+
   return (
     <>
-    <Navigation />
-    <MainRouter />
+<div>  
+    { isAuth ? <div> <Navigation onLogout={logoutHanlder} /> <MainRouter /> </div> : <Login onLogin={loginHandler} /> }
+</div>
     </>
   );
 };

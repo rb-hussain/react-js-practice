@@ -1,5 +1,5 @@
 
-const Login = () => {
+const Login = ({onLogin}) => {
 
 return(
 <>
@@ -21,7 +21,7 @@ return(
                         <input type="password" placeholder="write your password" name="UserPassword" />
                     </div>
                     <br />
-                        <button className="login-btn" > Login  </button>
+                        <button className="login-btn" onClick={onLogin} > Login  </button>
                     </div>
                 </div>
             </div>
