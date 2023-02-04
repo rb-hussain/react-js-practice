@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Timer from "../getTime/Timer";
 
 
 
@@ -18,6 +19,8 @@ const DigitalClock = () => {
         <>
         <h1 className="text-center"> Digital Clock</h1>
         <p className="text-center">{dispalyTime} </p>
+
+        <Timer/>
         </>
     );
  }

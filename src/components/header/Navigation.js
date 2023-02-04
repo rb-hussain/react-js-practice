@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './navigation.css'; 
 const Navigation = () =>{
     return (
         <header>
@@ -11,13 +12,22 @@ const Navigation = () =>{
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="cards">Card</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/current-time">Current Time</Link>
             </li>
             <li>
-              <Link to="/nothing-here">Nothing Here</Link>
+              <Link to="/counter">Counter</Link>
+            </li>
+            <li>
+              <Link to="/todo-beta">Todo Beta</Link>
+            </li>
+            <li>
+              <Link to="/nothing-here">404</Link>
             </li>
           </ul>
         </nav>

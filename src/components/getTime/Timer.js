@@ -14,6 +14,7 @@ return(
         <div className="container d-flex justify-content-center">
             <div className="row ">
                 <div className="dateParent ">
+                    <h1> On Click Time Update</h1>
                     <p className="showDate"> {showTime} </p>
                     <button className="getTime" onClick={updateTimer}> GET TIME</button>
                 </div>

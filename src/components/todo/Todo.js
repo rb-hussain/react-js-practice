@@ -1,6 +1,18 @@
-import TodoList from "./TodoList";
 import { useState } from "react";
+import TodoList from "./TodoList";
+import Events from "../events/Events";
+import UserDataForm from "../forms/UserDataForm";
+import UserDataFormEvent from "../forms/UserDataFormEvent";
+import FirstHook from "../hooks/FirstHook";
+import List from "../list/List";
 const Todo = () => {
+
+  const [itemslist,setitems] = useState (["Hello","World"],)    
+      
+    const addItemHandle = (itemText) =>{
+            setitems([...itemslist,itemText ]);
+        }
+
     // const todoArr = ["One","Two","Three"];
     // const [todolist,setTodo] = useState (["One","Two","Three","Four"]); 
 
@@ -26,6 +38,11 @@ const Todo = () => {
     return (
     <>
     <div> <TodoList /> </div>
+    <Events />
+    <UserDataForm />
+    <UserDataFormEvent />
+      <List items={itemslist} />
+      <FirstHook add={addItemHandle} />
     </>
 );
 };

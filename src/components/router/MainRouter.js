@@ -3,18 +3,25 @@ import Navigation from "../header/Navigation";
 import Home from '../homePage/Home';
 import NotFound from "../NotFound";
 import Layout from "../header/Navigation"
+import About from "../about/About";
+import Cards from "../cards/Cards";
+import DigitalClock from "../digitalClock/DigitalClock";
+import Increment from "../increment/Increment";
+import Todo from "../todo/Todo";
 
 const MainRouter = () => {
     return (
     <>
     <div>
+      
       <Routes>
-      <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+                <Route path="about" element={<About/>} />
+                <Route path="cards" element={<Cards/>} />
+                <Route path="current-time" element={<DigitalClock/>} />
+                <Route path="counter" element={<Increment />} />
+                <Route path="todo-beta" element={<Todo/>} />
                 <Route path="*" element={ <NotFound />} />
-            </Route>
       </Routes>
     </div>
     </>
@@ -22,32 +29,5 @@ const MainRouter = () => {
 };
 
 
-
-function About() {
-    return (
-      <div>
-        <h2>About</h2>
-      </div>
-    );
-  }
-  
-  function Dashboard() {
-    return (
-      <div>
-        <h2>Dashboard</h2>
-      </div>
-    );
-  }
-  
-  function NoMatch() {
-    return (
-      <div>
-        <h2>Nothing to see here!</h2>
-        <p>
-          <Link to="/">Go to the home page</Link>
-        </p>
-      </div>
-    );
-  }
 
 export default MainRouter;
