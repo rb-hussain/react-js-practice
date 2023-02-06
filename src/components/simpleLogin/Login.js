@@ -1,6 +1,7 @@
-
-const Login = ({onLogin}) => {
-
+import { useContext } from "react";
+import AuthContexts from "../../contexts/AuthContexts";
+const Login = () => {
+const authctx = useContext(AuthContexts);
 return(
 <>
         <div className="container-fluid mt-4">
@@ -21,7 +22,7 @@ return(
                         <input type="password" placeholder="write your password" name="UserPassword" />
                     </div>
                     <br />
-                        <button className="login-btn" onClick={onLogin} > Login  </button>
+                        <button className="login-btn" onClick={() => authctx.SetAuthc(true) } > Login  </button>
                     </div>
                 </div>
             </div>

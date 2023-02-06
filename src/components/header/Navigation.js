@@ -1,6 +1,21 @@
 import { Link } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import AuthContexts from "../../contexts/AuthContexts";
 import './navigation.css'; 
 const Navigation = ({onLogout}) =>{
+  const authctx = useContext(AuthContexts);
+  useEffect(
+    () => {
+      const ineterval = setInterval(() => {
+        console.log("I'm running")
+      }, 1000);
+     return () =>{
+      clearInterval (ineterval);
+     } 
+    },[]
+    
+ );
+
     return (
         <header>
             <div>
@@ -30,7 +45,7 @@ const Navigation = ({onLogout}) =>{
               <Link to="/nothing-here">404</Link>
             </li>
           </ul>
-          <button className="login-btn" onClick={ () => onLogout(false)} > LogOut </button>
+          <button className="login-btn" onClick={ () => authctx.SetAuthc(false)} > LogOut </button>
         </nav>
   
         <hr />
