@@ -12,13 +12,14 @@ export default function App() {
     },[]
  );
   const [isAuth, setisAuth] = useState(false);
-  const authctx = useContext(AuthContexts);
+   useContext(AuthContexts);
  
   const ctxValue ={
     IsLoggedIn : isAuth,
     SetAuthc : (val) =>{
-      localStorage.setItem ("IsLogedIn", val ? "1" : "0" );
       setisAuth (val);
+      localStorage.setItem ("IsLogedIn", val ? "1" : "0" );
+      
     }
   } 
 
