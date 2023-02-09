@@ -7,7 +7,7 @@ const Navigation = ({onLogout}) =>{
   useEffect(
     () => {
       const ineterval = setInterval(() => {
-        console.log("I'm running")
+        // console.log("I'm running")
       }, 1000);
      return () =>{
       clearInterval (ineterval);
@@ -40,6 +40,12 @@ const Navigation = ({onLogout}) =>{
             </li>
             <li>
               <Link to="/todo-beta">Todo Beta</Link>
+            </li>
+            <li>
+            <Link to="/redux-todo">Todo Redux</Link>
+            </li>
+            <li>
+            <Link to="/user-table">User Table</Link>
             </li>
             <li>
               <Link to="/nothing-here">404</Link>
